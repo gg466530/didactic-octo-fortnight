@@ -1,0 +1,144 @@
+body {
+  min-height: 100vh;
+  margin: 0;
+  background:
+    radial-gradient(circle at 100% 100%, #000000 25%, transparent 70%),
+    radial-gradient(circle at 0% 0%, #bbb3c0 5%, transparent 70%),
+    linear-gradient(135deg, #0e0e99 0%, #1a0a2e 100%);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: #0a0a0f;
+}
+
+h1 {
+  color: #ffffff;
+  text-align: center;
+  margin-top: 20vh;
+}
+
+h2 {
+  color: #02ff579c;
+  text-align: center;
+  margin-top: 5vh;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background: transparent; 
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+}
+
+li a:hover {
+  background-color: rgba(255, 255, 255, 0.1); 
+}
+
+@media (max-width: 600px) {
+  ul {
+    display: flex;
+    flex-direction: column;
+  }
+  li {
+    float: none;
+  }
+}
+h3 {
+  color: #ffc0139c;
+  text-align: center;
+  margin-top: 5vh;
+}
+* {
+  box-sizing: border-box;
+}
+
+
+/* Header/Blog Title */
+.header {
+  padding: 30px;
+  font-size: 40px;
+  text-align: center;
+}
+
+/* Create two unequal columns that floats next to each other */
+/* Left column */
+.leftcolumn {
+  float: left;
+  width: 75%;
+}
+
+/* Right column */
+.rightcolumn {
+  float: left;
+  width: 25%;
+  padding-left: 20px;
+}
+
+/* Fake image */
+.fakeimg {
+  background-color: #aaa;
+  width: 100%;
+  padding: 20px;
+}
+
+/* Add a card effect for articles */
+.card {
+  background-color: white;
+  padding: 20px;
+  margin-top: 20px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Footer */
+.footer {
+  padding: 20px;
+  text-align: center;
+  background: #ddd;
+  margin-top: 20px;
+}
+
+/* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 800px) {
+  .leftcolumn, .rightcolumn {
+    width: 100%;
+    padding: 0;
+  }
+}
+h4 {
+  color: #ffc0139c;
+  text-align: center;
+  margin-top: 5vh;
+  font-size: 25px;
+}
+img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+footer {
+  color: white;
+  text-align: center;
+  padding: 10px;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
